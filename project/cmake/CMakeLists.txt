@@ -120,8 +120,8 @@ endif()
 
 # Missing mir support in these libraries
 if (ENABLE_MIR)
-  set(ENABLE_VAAPI OFF CACHE BOOL "Disabling VAAPI since no mir support" FORCE)
-  set(ENABLE_VDPAU OFF CACHE BOOL "Disabling VDPAU since no mir support" FORCE)
+  set(ENABLE_VAAPI OFF CACHE BOOL "Disabling VAAPI since no Mir support" FORCE)
+  set(ENABLE_VDPAU OFF CACHE BOOL "Disabling VDPAU since no Mir support" FORCE)
 endif()
 
 # Optional dependencies

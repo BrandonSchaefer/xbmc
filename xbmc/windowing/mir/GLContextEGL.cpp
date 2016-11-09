@@ -60,13 +60,13 @@ bool CGLContextEGL::CreateDisplay(MirConnection* connection,
 
   if (m_eglDisplay == EGL_NO_DISPLAY)
   {
-    CLog::Log(LOGERROR, "failed to get egl display\n");
+    CLog::Log(LOGERROR, "failed to get EGL display\n");
     return false;
   }
 
   if (!eglInitialize(m_eglDisplay, &major, &minor))
   {
-    CLog::Log(LOGERROR, "failed to initialize egl display\n");
+    CLog::Log(LOGERROR, "failed to initialize EGL display\n");
     return false;
   }
 
@@ -75,13 +75,13 @@ bool CGLContextEGL::CreateDisplay(MirConnection* connection,
   if (!eglChooseConfig(m_eglDisplay, attribs,
                        &m_eglConfig, 1, &neglconfigs))
   {
-    CLog::Log(LOGERROR, "Failed to query number of egl configs");
+    CLog::Log(LOGERROR, "Failed to query number of EGL configs");
     return false;
   }
 
   if (neglconfigs <= 0)
   {
-    CLog::Log(LOGERROR, "No suitable egl configs found");
+    CLog::Log(LOGERROR, "No suitable EGL configs found");
     return false;
   }
 

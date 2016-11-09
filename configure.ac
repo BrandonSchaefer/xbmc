@@ -1932,10 +1932,10 @@ fi
 
 if test "$use_mir" = "yes"; then
   USE_MIR=1
-  final_message="$final_message\n  MIR:\t\tYes"
+  final_message="$final_message\n  Mir:\t\tYes"
 else
   USE_MIR=0
-  final_message="$final_message\n  MIR:\t\tNo"
+  final_message="$final_message\n  Mir:\t\tNo"
 fi
 
 if test "$use_x11" = "yes"; then
