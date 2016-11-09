@@ -19,15 +19,15 @@
  */
 
 
+#include "WinEventsMir.h"
+
+#include <unordered_map>
 #include <mir_toolkit/mir_client_library.h>
 #include <xkbcommon/xkbcommon-keysyms.h>
 
 #include "Application.h"
 #include "input/Key.h"
 #include "input/MouseStat.h"
-#include "WinEventsMir.h"
-
-#include <unordered_map>
 
 namespace
 {

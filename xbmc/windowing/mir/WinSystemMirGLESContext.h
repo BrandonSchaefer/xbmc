@@ -3,10 +3,10 @@
 #ifndef WINDOW_SYSTEM_MIR_GLES_CONTEXT_H_
 #define WINDOW_SYSTEM_MIR_GLES_CONTEXT_H_
 
-#include "WinSystemMir.h"
 #include "GLContextEGL.h"
-#include "rendering/gles/RenderSystemGLES.h"
+#include "rendering/gl/RenderSystemGLES.h"
 #include "utils/GlobalsHandling.h"
+#include "WinSystemMir.h"
 
 class CWinSystemMirGLESContext : public CWinSystemMir, public CRenderSystemGLES
 {

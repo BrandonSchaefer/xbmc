@@ -3,10 +3,10 @@
 #ifndef WINDOW_SYSTEM_MIR_H_
 #define WINDOW_SYSTEM_MIR_H_
 
-#include "windowing/WinSystem.h"
-#include "threads/CriticalSection.h"
-
 #include <mir_toolkit/mir_client_library.h>
+
+#include "threads/CriticalSection.h"
+#include "windowing/WinSystem.h"
 
 class IDispResource;
 

@@ -20,13 +20,13 @@
 
 
 #include "WinSystemMir.h"
-#include "WinEventsMir.h"
-#include "utils/log.h"
-
-#include "settings/DisplaySettings.h"
 
 #include <string.h>
+
 #include "guilib/GraphicContext.h"
+#include "settings/DisplaySettings.h"
+#include "utils/log.h"
+#include "WinEventsMir.h"
 
 CWinSystemMir::CWinSystemMir() :
   m_connection(nullptr),

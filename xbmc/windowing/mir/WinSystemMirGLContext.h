@@ -24,10 +24,10 @@
 #ifndef WINDOW_SYSTEM_MIR_GL_CONTEXT_H_
 #define WINDOW_SYSTEM_MIR_GL_CONTEXT_H_
 
-#include "WinSystemMir.h"
 #include "GLContextEGL.h"
 #include "rendering/gl/RenderSystemGL.h"
 #include "utils/GlobalsHandling.h"
+#include "WinSystemMir.h"
 
 class CWinSystemMirGLContext : public CWinSystemMir, public CRenderSystemGL
 {

@@ -24,11 +24,11 @@
 #ifndef WINDOW_SYSTEM_EVENTS_MIR_H_
 #define WINDOW_SYSTEM_EVENTS_MIR_H_
 
+#include <mutex>
+#include <queue>
 #include <mir_toolkit/mir_client_library.h>
 
 #include "../WinEvents.h"
-#include <mutex>
-#include <queue>
 
 extern void MirHandleEvent(MirSurface* surface, MirEvent const* ev, void* context);
 

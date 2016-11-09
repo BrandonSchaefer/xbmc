@@ -20,6 +20,7 @@
 
 
 #include "GLContextEGL.h"
+
 #include "utils/log.h"
 
 CGLContextEGL::CGLContextEGL() :
