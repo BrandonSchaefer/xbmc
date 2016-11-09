@@ -8,10 +8,6 @@
 # MIR_INCLUDE_DIRS - the Mir include directory
 # MIR_LIBRARIES    - the Mir libraries
 # MIR_DEFINITIONS  - the Mir definitions
-#
-# and the following imported targets::
-#
-#   Mir::Mir   - The Mir library
 
 
 if(PKG_CONFIG_FOUND)
@@ -22,7 +18,7 @@ find_path(MIR_INCLUDE_DIR NAMES mir_toolkit/mir_client_library.h
                           PATHS ${PC_MIR_INCLUDE_DIRS})
 
 find_library(MIR_LIBRARY NAMES mirclient
-                         PATHS ${PC_MIR_LIBRARIES} ${PC_LIBRARY_DIRS})
+                         PATHS ${PC_MIR_LIBRARIES} ${PC_MIR_LIBRARY_DIRS})
 
 include (FindPackageHandleStandardArgs)
 find_package_handle_standard_args (MIR
