@@ -41,8 +41,8 @@ public:
   void  MessagePush(XBMC_Event* ev);
 
 private:
-  std::queue<XBMC_Event> events;
-  std::mutex mutex;
+  std::queue<XBMC_Event> m_events;
+  std::mutex m_mutex;
 };
 
 #endif // WINDOW_SYSTEM_EVENTS_MIR_H_
