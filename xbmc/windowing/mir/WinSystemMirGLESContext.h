@@ -4,7 +4,7 @@
 #define WINDOW_SYSTEM_MIR_GLES_CONTEXT_H_
 
 #include "GLContextEGL.h"
-#include "rendering/gl/RenderSystemGLES.h"
+#include "rendering/gles/RenderSystemGLES.h"
 #include "utils/GlobalsHandling.h"
 #include "WinSystemMir.h"
 
