@@ -319,9 +319,9 @@ bool CWinEventsMir::MessagePump()
   {
     XBMC_Event e;
     {
-      std::lock_guard<decltype(mutex)> event_lock(mutex);
-      e = events.front();
-      events.pop();
+      std::lock_guard<decltype(m_mutex)> event_lock(m_mutex);
+      e = m_events.front();
+      m_events.pop();
     }
     g_application.OnEvent(e);
   }
@@ -331,12 +331,12 @@ bool CWinEventsMir::MessagePump()
 
 size_t CWinEventsMir::GetQueueSize()
 {
-  std::lock_guard<decltype(mutex)> event_lock(mutex);
-  return events.size();
+  std::lock_guard<decltype(m_mutex)> event_lock(m_mutex);
+  return m_events.size();
 }
 
 void CWinEventsMir::MessagePush(XBMC_Event* ev)
 {
-  std::lock_guard<decltype(mutex)> event_lock(mutex);
-  events.push(*ev);
+  std::lock_guard<decltype(m_mutex)> event_lock(m_mutex);
+  m_events.push(*ev);
 }
