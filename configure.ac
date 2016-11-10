@@ -1304,6 +1304,7 @@ if test "$use_mir" = "yes"; then
   # No support for mir yet
   use_vaapi=no
   use_vdpau=no
+  use_openmax=no
   PKG_CHECK_MODULES([MIR],    [mirclient],
     [INCLUDES="$INCLUDES $MIR_CFLAGS"; LIBS="$LIBS $MIR_LIBS"],
     AC_MSG_ERROR($missing_library))

@@ -134,7 +134,9 @@ endif
 
 ifeq (@USE_OPENGLES@,1)
 DIRECTORY_ARCHIVES += xbmc/rendering/gles/rendering_gles.a
+ifneq (@USE_MIR@,1)
 DIRECTORY_ARCHIVES += xbmc/windowing/egl/windowing_egl.a
+endif
 endif
 
 ifeq (@USE_UPNP@,1)
